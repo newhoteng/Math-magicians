@@ -26,7 +26,9 @@
   width: 75%;
   display: flex;
   flex-wrap: wrap;
+
   /* justify-content: flex-end; */
+
   /* flex-direction: row-reverse; */
 }
 
