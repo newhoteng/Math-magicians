@@ -30,7 +30,7 @@
 </details>
 
 ### Key Features
-  - Pending
+  - UI for Calculator App
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
