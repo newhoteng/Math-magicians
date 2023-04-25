@@ -1,39 +1,56 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator-wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display-panel {
+  /* border: 1px solid green; */
+  width: 100%;
+  text-align: right;
+  color: white;
+  background-color: gray;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.digit-wrapper {
+  /* border: 1px solid blueviolet; */
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+  /* flex-direction: row-reverse; */
+}
+
+.operator-wrapper {
+  /* border: 1px solid blue; */
+  width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator-wrapper button {
+  border: 0.5px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.digit-button {
+  width: calc(100% / 3);
+  padding: 1rem;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.digit-button:nth-child(13) {
+  width: calc(200% / 3);
+}
+
+.operator-button {
+  padding: 1rem;
+  background-color: orange;
 }
