@@ -30,7 +30,8 @@
 </details>
 
 ### Key Features
-  - UI for Calculator App
+  - Calculator for simple calculations.
+  - Display of random math-related quote.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
