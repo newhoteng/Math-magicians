@@ -23,7 +23,7 @@ OperatorButton.propTypes = {
 
 // Calculator App
 function Calculator() {
-  const Operators = ['/', 'x', '-', '+', '='];
+  const Operators = ['÷', 'x', '-', '+', '='];
   const Digits = ['AC', '+ / -', '%', 7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.'];
 
   // Create button elements from Operators array using OperatorButton component
