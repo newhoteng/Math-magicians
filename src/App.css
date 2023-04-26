@@ -11,9 +11,13 @@
 
 .display-panel {
   width: 100%;
+  height: 3rem;
   text-align: right;
   color: white;
   background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   padding: 1rem;
 }
 
