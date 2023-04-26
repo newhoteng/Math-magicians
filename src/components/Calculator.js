@@ -8,7 +8,7 @@ function DigitButton({ digit }) {
   );
 }
 DigitButton.propTypes = {
-  digit: PropTypes.oneOfType(PropTypes.string, PropTypes.number).isRequired,
+  digit: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 // OpertorButton component with prop validation
