@@ -40,6 +40,7 @@
 .digit-button {
   width: calc(100% / 3);
   padding: 1rem;
+  font-size: 1rem;
 }
 
 .digit-button:nth-child(13) {
@@ -49,4 +50,5 @@
 .operator-button {
   padding: 1rem;
   background-color: orange;
+  font-size: 1rem;
 }
