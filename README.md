@@ -77,8 +77,8 @@ npm install
 
 ## :telescope: Future Features <a name="future-features"></a>
   <!-- None pending so far, open to suggestions. -->
-  - Calculator for simple calculations.
-  - Display of random math-related quote.
+  - SPA (Single-page Application)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
