@@ -52,3 +52,7 @@
   background-color: orange;
   font-size: 1rem;
 }
+
+.quote-wrapper {
+  border: 1px solid green;
+}

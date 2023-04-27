@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DigitButton, OperatorButton } from './Buttons';
 import Calculate from '../logic/calculate';
+import Quote from './Quotes';
 
 // Calculator App
 function Calculator() {
@@ -30,19 +31,22 @@ function Calculator() {
   ));
 
   return (
-    <div className="calculator-wrapper">
-      <div className="display-panel">
-        {obj.total}
-        {' '}
-        {obj.operation}
-        {' '}
-        {obj.next}
-      </div>
-      <div className="digit-wrapper">
-        {digitList}
-      </div>
-      <div className="operator-wrapper">
-        {operatorList}
+    <div className="calculator-page">
+      <Quote />
+      <div className="calculator-wrapper">
+        <div className="display-panel">
+          {obj.total}
+          {' '}
+          {obj.operation}
+          {' '}
+          {obj.next}
+        </div>
+        <div className="digit-wrapper">
+          {digitList}
+        </div>
+        <div className="operator-wrapper">
+          {operatorList}
+        </div>
       </div>
     </div>
   );
