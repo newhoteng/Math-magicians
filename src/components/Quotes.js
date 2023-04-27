@@ -7,7 +7,7 @@ const category = 'learning';
 function Quote() {
   const [quoteobj, setData] = useState({});
   const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,8 +19,8 @@ function Quote() {
           contentType: 'application/json',
         });
         const json = await res.json();
-        // console.log(json[0]);
         setData(json[0]);
+        setIsLoading(false);
       } catch (error) {
         setHasError(true);
       }
@@ -28,7 +28,6 @@ function Quote() {
     };
     fetchData();
   }, []);
-  // setData, setIsLoading
 
   if (hasError) {
     return (
@@ -48,7 +47,11 @@ function Quote() {
 
   return (
     <blockquote className="quote-wrapper">
-      <p>{quoteobj.quote}</p>
+      <p className="quote">
+        &quot;
+        {quoteobj.quote}
+        &quot;
+      </p>
       <cite className="author">{quoteobj.author}</cite>
     </blockquote>
   );
