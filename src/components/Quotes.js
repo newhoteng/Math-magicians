@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
 
 const apiBaseUrl = 'https://api.api-ninjas.com/v1/quotes?category=';
 const apiKey = 'rcNcFyL381es18NmZtOhqw==XBo7l4TOWSCGXij1';
@@ -33,25 +32,25 @@ function Quote() {
 
   if (hasError) {
     return (
-      <div className="quote-wrapper">
+      <blockquote className="quote-wrapper">
         <p className="quote">Something went wrong!</p>
-      </div>
+      </blockquote>
     );
   }
 
   if (isLoading) {
     return (
-      <div className="quote-wrapper">
+      <blockquote className="quote-wrapper">
         <p className="quote">Loading...</p>
-      </div>
+      </blockquote>
     );
   }
 
   return (
-    <div className="quote-wrapper">
-      <p className="quote">{quoteobj.quote}</p>
-      <p className="author">{quoteobj.author}</p>
-    </div>
+    <blockquote className="quote-wrapper">
+      <p>{quoteobj.quote}</p>
+      <cite className="author">{quoteobj.author}</cite>
+    </blockquote>
   );
 }
 

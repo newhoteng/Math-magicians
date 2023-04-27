@@ -54,5 +54,8 @@
 }
 
 .quote-wrapper {
-  border: 1px solid green;
+  background-color: #eee;
+  padding: 1rem;
+  padding-top: 0.2rem;
+  border-radius: 10px;
 }
