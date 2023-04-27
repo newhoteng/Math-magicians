@@ -36,8 +36,8 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: Live Demo <a name="live-demo"></a>
-- Pending
-<!-- [Leaderboard app](https://newhoteng.github.io/Leaderboard/) -->
+- [Math-magicians](https://newhoteng.github.io/Math-magicians/)
+<!-- [Math-magicians](https://newhoteng.github.io/Math-magicians/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
