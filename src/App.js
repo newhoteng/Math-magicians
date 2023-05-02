@@ -1,26 +1,38 @@
 import {
-  BrowserRouter, Routes, Route, Outlet,
+  BrowserRouter, Routes, Route, Outlet, Link,
 } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Quote from './components/Quotes';
+import HomePage from './components/HomePage';
 import './App.css';
 // App.js Link
 
 function NavBar() {
   return (
     <>
-      <nav>
+      <nav className="nav">
         <ul>
           <li>Math Magicians</li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/calculator">Calculator</a></li>
-          <li><a href="/quote">Quote</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="calculator">Calculator</Link></li>
+          <li><Link to="quote">Quote</Link></li>
         </ul>
       </nav>
       <Outlet />
     </>
   );
 }
+
+  <nav>
+    <ul>
+      <li>
+        <Link to="contacts/1">Your Name</Link>
+      </li>
+      <li>
+        <Link to="contacts/2">Your Friend</Link>
+      </li>
+    </ul>
+  </nav>;
 
 function App() {
   return (
