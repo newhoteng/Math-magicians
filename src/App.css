@@ -65,3 +65,27 @@
   font-weight: 300;
   font-size: 1rem;
 }
+
+nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  background-color: white;
+  padding: 80px 28px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 5px 5px #e5e5e5;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 1rem;
+}
