@@ -19,7 +19,7 @@
 - [📝 License](#license)
 
 #  :open_book: Math-magicians <a name="about-project"></a>
-"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random quote.
 
 ## :hammer_and_wrench: Built With <a name="built-with"></a>
 ### Tech Stack
@@ -32,6 +32,7 @@
 ### Key Features
   - Calculator for simple calculations.
   - Display of random math-related quote.
+  - Single Page Application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,8 +77,7 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :telescope: Future Features <a name="future-features"></a>
-  <!-- None pending so far, open to suggestions. -->
-  - SPA (Single-page Application)
+  - None pending so far, open to suggestions.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
