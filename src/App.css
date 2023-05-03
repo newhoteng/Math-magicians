@@ -53,6 +53,15 @@
   font-size: 1rem;
 }
 
+.quote-div {
+  /* border: 1px solid red; */
+  height: 100vh;
+  height: calc(100vh - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .quote-wrapper {
   background-color: #eee;
   padding: 1rem;
@@ -66,9 +75,18 @@
   font-size: 1rem;
 }
 
+nav div {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 nav {
-  border: 1px solid red;
-  padding: 0;
+  /* border: 1px solid red; */
+  padding: 0 25px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px #e5e5e5;
   /* display: block;
   position: absolute;
   top: 0;
@@ -77,26 +95,31 @@ nav {
 }
 
 nav ul {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   padding: 0;
   margin: 0;
   /* background-color: white; */
   /* padding: 80px 28px 60px; */
   /* gap: 20px; */
-  box-shadow: 0 5px 5px #e5e5e5;
 }
 
 nav li {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   list-style: none;
   padding: 15px;
+  font-weight: 600;
+  border-right: 2px solid #3a4a42;
   /* background-color: white;
   padding: 80px 28px 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   box-shadow: 0 5px 5px #e5e5e5; */
+}
+
+nav li:nth-child(3) {
+  border: none;
 }
 
 nav a {

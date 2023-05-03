@@ -5,14 +5,13 @@ import Calculator from './components/Calculator';
 import Quote from './components/Quotes';
 import HomePage from './components/HomePage';
 import './App.css';
-// App.js Link
 
 function NavBar() {
   return (
     <>
       <nav className="nav">
+        <div>Math Magicians</div>
         <ul>
-          <li>Math Magicians</li>
           <li><Link to="/">Home</Link></li>
           <li><Link to="calculator">Calculator</Link></li>
           <li><Link to="quote">Quote</Link></li>
@@ -22,17 +21,6 @@ function NavBar() {
     </>
   );
 }
-
-  <nav>
-    <ul>
-      <li>
-        <Link to="contacts/1">Your Name</Link>
-      </li>
-      <li>
-        <Link to="contacts/2">Your Friend</Link>
-      </li>
-    </ul>
-  </nav>;
 
 function App() {
   return (

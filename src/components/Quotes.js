@@ -46,14 +46,16 @@ function Quote() {
   }
 
   return (
-    <blockquote className="quote-wrapper">
-      <p className="quote">
-        &quot;
-        {quoteobj.quote}
-        &quot;
-      </p>
-      <cite className="author">{quoteobj.author}</cite>
-    </blockquote>
+    <div className="quote-div">
+      <blockquote className="quote-wrapper">
+        <p className="quote">
+          &quot;
+          {quoteobj.quote}
+          &quot;
+        </p>
+        <cite className="author">{quoteobj.author}</cite>
+      </blockquote>
+    </div>
   );
 }
 
