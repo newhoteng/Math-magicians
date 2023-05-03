@@ -31,17 +31,21 @@ function Quote() {
 
   if (hasError) {
     return (
-      <blockquote className="quote-wrapper">
-        <p className="quote">Something went wrong!</p>
-      </blockquote>
+      <div className="quote-div">
+        <blockquote className="quote-wrapper">
+          <p className="quote">Something went wrong!</p>
+        </blockquote>
+      </div>
     );
   }
 
   if (isLoading) {
     return (
-      <blockquote className="quote-wrapper">
-        <p className="quote">Loading...</p>
-      </blockquote>
+      <div className="quote-div">
+        <blockquote className="quote-wrapper">
+          <p className="quote">Loading...</p>
+        </blockquote>
+      </div>
     );
   }
 

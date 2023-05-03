@@ -2,6 +2,80 @@
   box-sizing: border-box;
 }
 
+nav div {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0;
+
+  /* margin: 15px 0; */
+}
+
+nav {
+  padding: 0 25px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px #e5e5e5;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  /* border: 1px solid red; */
+  display: flex;
+  padding: 0;
+
+  /* margin-bottom: 15px; */
+  margin: 15px;
+}
+
+nav li {
+  list-style: none;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-right: 2px solid #3a4a42;
+}
+
+nav li:nth-child(3) {
+  border: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.homediv {
+  padding: 0 40px;
+}
+
+.homediv h1 {
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.homediv p {
+  margin: 16px auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.calculator-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-top: 4rem;
+}
+
+.calculator-div h1 {
+  margin: 0 auto 3rem;
+}
+
 .calculator-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +128,6 @@
 }
 
 .quote-div {
-  /* border: 1px solid red; */
   height: 100vh;
   height: calc(100vh - 3rem);
   display: flex;
@@ -75,55 +148,12 @@
   font-size: 1rem;
 }
 
-nav div {
-  font-size: 2rem;
-  font-weight: 800;
-}
+@media all and (max-width: 768px) {
+  nav div {
+    margin: 10px auto;
+  }
 
-nav {
-  /* border: 1px solid red; */
-  padding: 0 25px 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 5px 5px #e5e5e5;
-  /* display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; */
-}
-
-nav ul {
-  /* border: 1px solid green; */
-  display: flex;
-  padding: 0;
-  margin: 0;
-  /* background-color: white; */
-  /* padding: 80px 28px 60px; */
-  /* gap: 20px; */
-}
-
-nav li {
-  /* border: 1px solid blue; */
-  list-style: none;
-  padding: 15px;
-  font-weight: 600;
-  border-right: 2px solid #3a4a42;
-  /* background-color: white;
-  padding: 80px 28px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-shadow: 0 5px 5px #e5e5e5; */
-}
-
-nav li:nth-child(3) {
-  border: none;
-}
-
-nav a {
-  text-decoration: none;
-  color: #3a4a42;
-  font-size: 1rem;
+  nav ul {
+    margin: 0 auto;
+  }
 }
