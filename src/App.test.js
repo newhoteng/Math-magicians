@@ -72,11 +72,10 @@ describe('calculations', () => {
     const obj = { total: 0, next: null, operation: null };
 
     // Act
-    const clickOnFirstTwo = Calculate(obj, '8');
-    const clickOnX = Calculate(clickOnFirstTwo, '+ / -');
+    const resultObj = Calculate(Calculate(obj, '8'), '+ / -');
 
     // Assert
-    expect(clickOnX.next).toBe('-8');
+    expect(resultObj.next).toBe('-8');
   });
 });
 
@@ -149,11 +148,11 @@ describe('operations', () => {
 
   test('operation 4 $ 6', () => {
     // Arrange
-    const items = [4, 6, '^'];
-    const expectedErrorMessage = /Unknown operation '\^'/;
+    const items = [4, 6, '$'];
 
     // Act and Assert
-    expect(() => Operate(...items)).toThrowError(expectedErrorMessage);
+    // expect(() => Operate(...items)).toThrow(Error('Unknown operation \'$\''));
+    expect(() => Operate(...items)).toThrow('Unknown operation \'$\'');
   });
 });
 
