@@ -109,7 +109,7 @@ describe('App snapshots', () => {
       .toJSON();
     expect(quotepage).toMatchSnapshot();
   });
-})
+});
 
 describe('App simulate user interaction', () => {
   it('renders Homepage component', () => {
