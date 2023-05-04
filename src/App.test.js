@@ -54,4 +54,37 @@ describe('calculations', () => {
     expect(clickOnEqualButton.total).toBe('0.25');
   });
 });
+describe('operations', () => {
+  test('operation 16 x 2', () => {
+    // Arrange
+    const items = [16, 2, 'x'];
+
+    // Act
+    const result = Operate(...items);
+
+    // Assert
+    expect(result).toBe('32');
+  });
+
+  test('operation 56 ÷ 0.5', () => {
+    // Arrange
+    const items = [56, 0.5, '÷'];
+
+    // Act
+    const result = Operate(...items);
+
+    // Assert
+    expect(result).toBe('112');
+  });
+
+  test('operation 1021 - 30', () => {
+    // Arrange
+    const items = [1021, 30, '-'];
+
+    // Act
+    const result = Operate(...items);
+
+    // Assert
+    expect(result).toBe('991');
+  });
 });
