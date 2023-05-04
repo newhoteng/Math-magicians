@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshots renders correctly 1`] = `
+<div
+  className="homediv"
+>
+  <h1>
+    Welcome to our page!
+  </h1>
+  <p
+    className="homep"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit eaque esse obcaecati numquam impedit culpa? Quae numquam deserunt quas! Ad animi inventore laborum debitis non consequuntur exercitationem dolor quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit vel accusantium iste dicta possimus, nisi, doloribus vitae, cum autem tenetur! Ea quisquam nam fugit necessitatibus quae quidem, sit minima.
+  </p>
+  <p
+    className="homep"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit eaque esse obcaecati numquam impedit culpa? Quae numquam deserunt quas! Ad animi inventore laborum debitis non consequuntur exercitationem dolor quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit vel accusantium iste dicta possimus, nisi, doloribus vitae, cum autem tenetur! Ea quisquam nam fugit necessitatibus quae quidem, sit minima.
+  </p>
+</div>
+`;
+
+exports[`App snapshots renders correctly 2`] = `
+<div
+  className="calculator-div"
+>
+  <h1>
+    Let's do some math!
+  </h1>
+  <div
+    className="calculator-wrapper"
+  >
+    <div
+      className="display-panel"
+    >
+      0
+       
+       
+    </div>
+    <div
+      className="digit-wrapper"
+    >
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        + / -
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="digit-button"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+    </div>
+    <div
+      className="operator-wrapper"
+    >
+      <button
+        className="operator-button"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="operator-button"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+      <button
+        className="operator-button"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="operator-button"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="operator-button"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App snapshots renders correctly 3`] = `
+<div
+  className="quote-div"
+>
+  <blockquote
+    className="quote-wrapper"
+  >
+    <p
+      className="quote"
+    >
+      Loading...
+    </p>
+  </blockquote>
+</div>
+`;

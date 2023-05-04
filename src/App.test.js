@@ -1,11 +1,10 @@
-// import { render } from '@testing-library/react';
-// import renderer from 'react-test-renderer';
-// npm install --save-dev react-test-renderer
+import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Calculate from './logic/calculate';
 import Operate from './logic/operate';
-// import HomePage from './components/HomePage';
-// import Calculator from './components/Calculator';
-// import Quote from './components/Quotes';
+import HomePage from './components/HomePage';
+import Calculator from './components/Calculator';
+import Quote from './components/Quotes';
 
 describe('calculations', () => {
   test('calculate 2 x 2 + 16', () => {
@@ -86,5 +85,42 @@ describe('operations', () => {
 
     // Assert
     expect(result).toBe('991');
+  });
+});
+
+describe('App snapshots', () => {
+  it('renders correctly', () => {
+    const homepage = renderer
+      .create(<HomePage page="/">Math-magician</HomePage>)
+      .toJSON();
+    expect(homepage).toMatchSnapshot();
+  });
+
+  it('renders correctly', () => {
+    const calculatorpage = renderer
+      .create(<Calculator page="/calculator">Math-magician/calculator</Calculator>)
+      .toJSON();
+    expect(calculatorpage).toMatchSnapshot();
+  });
+
+  it('renders correctly', () => {
+    const quotepage = renderer
+      .create(<Quote page="/quote">Math-magician/quote</Quote>)
+      .toJSON();
+    expect(quotepage).toMatchSnapshot();
+  });
+})
+
+describe('App simulate user interaction', () => {
+  it('renders Homepage component', () => {
+    render(<HomePage />);
+  });
+
+  it('renders Calculator component', () => {
+    render(<Calculator />);
+  });
+
+  it('renders Quote component', () => {
+    render(<Quote />);
   });
 });
