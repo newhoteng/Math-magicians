@@ -52,7 +52,36 @@ describe('calculations', () => {
     // Assert
     expect(clickOnEqualButton.total).toBe('0.25');
   });
+
+  test('calculate 1 ÷ 4 AC', () => {
+    // Arrange
+    const obj = { total: 0, next: null, operation: null };
+
+    // Act
+    const clickOnFirstTwo = Calculate(obj, '1');
+    const clickOnX = Calculate(clickOnFirstTwo, '÷');
+    const clickOnSecondTwo = Calculate(clickOnX, '4');
+    const clickOnEqualButton = Calculate(clickOnSecondTwo, 'AC');
+
+    // Assert
+    expect(clickOnEqualButton.total).toBe('0');
+  });
+
+  test('calculate 8 + / -', () => {
+    // Arrange
+    const obj = { total: 0, next: null, operation: null };
+
+    // Act
+    const clickOnFirstTwo = Calculate(obj, '8');
+    const clickOnX = Calculate(clickOnFirstTwo, '+ / -');
+    // const clickOnSecondTwo = Calculate(clickOnX, '4');
+    // const clickOnEqualButton = Calculate(clickOnSecondTwo, 'AC');
+
+    // Assert
+    expect(clickOnX.next).toBe('-8');
+  });
 });
+
 describe('operations', () => {
   test('operation 16 x 2', () => {
     // Arrange
@@ -85,6 +114,48 @@ describe('operations', () => {
 
     // Assert
     expect(result).toBe('991');
+  });
+  //  start changes
+  test('operation 102 + 30', () => {
+    // Arrange
+    const items = [102, 30, '+'];
+
+    // Act
+    const result = Operate(...items);
+
+    // Assert
+    expect(result).toBe('132');
+  });
+
+  test('operation 46 ÷ 0', () => {
+    // Arrange
+    const items = [46, 0, '÷'];
+
+    // Act
+    const result = Operate(...items);
+
+    // Assert
+    expect(result).toBe('Can\'t divide by 0.');
+  });
+
+  test('operation 46 % 0', () => {
+    // Arrange
+    const items = [46, 0, '%'];
+
+    // Act
+    const result = Operate(...items);
+
+    // Assert
+    expect(result).toBe('Can\'t find modulo as can\'t divide by 0.');
+  });
+
+  test('operation 4 $ 6', () => {
+    // Arrange
+    const items = [4, 6, '^'];
+    const expectedErrorMessage = /Unknown operation '\^'/;
+
+    // Act and Assert
+    expect(() => Operate(...items)).toThrowError(expectedErrorMessage);
   });
 });
 
