@@ -65,14 +65,30 @@ Install this project with:<br>
 npm install
 ```
 
+### Run tests
+
+To run tests, run the following command:
+
+Example command:
+
+```sh
+    npm test
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## :busts_in_silhouette: Authors <a name="authors"></a>
-:bust_in_silhouette: **Harriet Oteng**
+## 👤👤 Authors <a name="authors"></a>
+
+👤 **Harriet Oteng**
 - GitHub: [@githubhandle](https://github.com/newhoteng)
 - Twitter: [@twitterhandle](https://twitter.com/HarrietOteng1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/harriet-oteng-75554666/)
+
+👤 **Mercy Mugambi**
+- GitHub: [@mercymugambi](https://github.com/mercymugambi)
+- Twitter: [@mercymugambi](https://twitter.com/MercyMugambi15)
+- LinkedIn: [@mercymugambi](https://www.linkedin.com/in/mercymugambi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

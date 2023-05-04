@@ -74,8 +74,6 @@ describe('calculations', () => {
     // Act
     const clickOnFirstTwo = Calculate(obj, '8');
     const clickOnX = Calculate(clickOnFirstTwo, '+ / -');
-    // const clickOnSecondTwo = Calculate(clickOnX, '4');
-    // const clickOnEqualButton = Calculate(clickOnSecondTwo, 'AC');
 
     // Assert
     expect(clickOnX.next).toBe('-8');
