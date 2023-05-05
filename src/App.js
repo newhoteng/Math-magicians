@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/Math-magicians">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<HomePage />} />
@@ -21,3 +21,4 @@ function App() {
 }
 
 export default App;
+
