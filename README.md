@@ -37,7 +37,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: Live Demo <a name="live-demo"></a>
-- [Math-magicians](https://newhoteng.github.io/Math-magicians/)
+- [Math-magicians](https://math-magicians-4jkk.onrender.com/)
 <!-- [Math-magicians](https://newhoteng.github.io/Math-magicians/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
